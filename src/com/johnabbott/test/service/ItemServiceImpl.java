@@ -1,6 +1,5 @@
 package com.johnabbott.test.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,15 +18,7 @@ public class ItemServiceImpl implements ItemService {
 	ItemDao itemDao;
 	
 	List<ItemEntity> listItems;
-	
-//	public ItemServiceImpl() {
-//		listItems = new ArrayList<ItemEntity>();
-//		
-//		listItems.add(new ItemEntity(1, "toto1", "popo1", 15));
-//		listItems.add(new ItemEntity(2, "toto2", "popo2", 14));
-//		listItems.add(new ItemEntity(3, "toto3", "popo3", 24));
-//		listItems.add(new ItemEntity(4, "toto4", "popo4", 34));
-//	}
+
 	
 	@Override
 	public List<ItemEntity> getItems(){
